@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini AI Chat Widget</title>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Gemini Icon for favicon (optional) -->
+  <link rel="icon" type="image/svg+xml" href="assets/gemini-icon.svg">
+</head>
+<body>
+  <!-- Chat Widget Container -->
+  <div id="gemini-chat-widget">
+    <!-- Chat Header -->
+    <div class="chat-header">
+      <img src="assets/gemini-icon.svg" alt="Gemini Icon" class="gemini-icon">
+      <span>Gemini AI Chat</span>
+      <button id="chat-close-btn" title="Close">&times;</button>
+    </div>
+    <!-- Chat Messages Area -->
+    <div class="chat-messages" id="chat-messages">
+      <!-- Messages will be dynamically inserted here -->
+    </div>
+    <!-- Chat Input Area -->
+    <form id="chat-form" autocomplete="off">
+      <input type="text" id="chat-input" placeholder="Type your message..." required />
+      <button type="submit" id="send-btn" title="Send">&#9658;</button>
+    </form>
+  </div>
+  <!-- Chat Widget Toggle Button (Floating) -->
+  <button id="chat-toggle-btn" title="Open Gemini Chat">
+    <img src="assets/gemini-icon.svg" alt="Gemini Icon">
+  </button>
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html> 
